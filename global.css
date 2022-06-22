@@ -47,6 +47,11 @@ img {
         background-color: #404040;
         }
         
+        .lista a:hover{
+            background-color: #e7e7e7;
+            color: #202020;
+        }
+
        .btn{
         background-color: rgb(172, 34, 22);
        }
