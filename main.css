@@ -1,0 +1,213 @@
+.main-grid{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+/* GRID SUPERIOR */
+
+/* Feito a mão*/
+.handmade{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 42px;
+    gap: 26px;
+    background-color: #fff;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius:6px;
+    
+}
+
+.handmade p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    word-spacing: 0.35ch;
+   
+    
+}
+
+/* detalhe vermelho entre texto e imagem */
+.handmade::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    background-color: #ee2211;
+    color: #ee2211;
+    position: absolute;
+    top: 32px;
+    left: 460px;
+}
+
+/* BOTÃO */
+.btn{
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    padding: 16px 20px;
+    background-color: #ee2211;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: #c7c7c7;
+    transition: 0.25s;
+}
+
+/* BOTÃO FIM */
+
+/* BICICLETA RADIUS */
+
+.bicicleta{
+    border-top-right-radius: 6px;
+    
+}
+
+
+
+
+/* TEXTO VANTAGENS */
+
+.vantagens{
+      color: #bbbbbb;
+      background-color: #e7e7e7;
+      font-weight: 600;
+      text-align:right;
+      align-self: center;
+      font-size: 80px;
+      padding: 26px 0px 24px 26px;
+      background-image: url(/img/onda.svg);
+      
+}
+
+/* FIM */
+
+
+
+
+
+
+
+
+
+/* Icones */
+
+
+.main-icones{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 42px;
+    background-color: #fff;
+    border-bottom-right-radius: 6px;
+}
+
+
+.grid-icones:nth-child(odd){
+ background-color: #c7c7c7;
+ border-radius: 4px;
+}
+
+.grid-icones{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    padding: 12px;
+    /* Anula o movimento da div
+    border-left: 5px solid #00000000; */
+    
+    
+}
+
+.grid-icones:hover{
+    border-left: 6px solid red;
+    transition: 0.15s;
+}
+
+/* Fim Icones */
+
+
+
+/*RESPONSIVIDADE*/
+@media(max-width:1000px){
+    .main-grid{
+        width: 100vw;
+        padding-top: 32px;
+    }
+
+    .handmade h1{
+        font-size: 32px;
+    }
+
+    .handmade p{
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    .btn{
+        padding: 12px 16px;
+    }
+}
+
+@media(max-width:800px){
+
+    .main-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 12px;
+    }
+    .btn {
+        align-self: flex-end;
+    }
+    .handmade h1{
+        padding-left: 12px;
+    }
+    .handmade p{
+        padding-left: 12px;
+        font-size: 22px;
+    }
+    .handmade{
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .vantagens{
+        font-size: 48px;
+        word-break: break-all;
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    .vantagens{
+        
+            font-size: 32px;
+            word-break: break-all;
+            padding: 12px;
+            text-align: center;
+        
+    }
+    .btn {
+        align-self: flex-end;
+        padding: 6px 8px;
+        font-size: 18px;
+    }
+    .handmade h1{
+        padding-left: 12px;
+        font-size: 24px;
+    }
+    .handmade p{
+        padding-left: 12px;
+        font-size: 14px;
+}
+}

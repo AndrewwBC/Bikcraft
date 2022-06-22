@@ -1,0 +1,77 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-header{
+    margin-top: 72px;
+}
+.lista{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.lista a{
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+}
+
+.lista a:hover{
+    background-color: #202020;
+    color: #fff;
+    transition: 0.20s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVIDADE*/
+@media(max-width:700px){
+    .img-header{
+        margin-top: 48px;
+    }
+    .lista{
+        margin-top: 60px;
+        gap: 20px;}
+}
+
+
+@media(max-width:600px){
+    .img-header{
+        margin-top: 24px;}
+    .lista{
+        margin-top: 40px;
+        gap: 20px;}
+    .lista a{
+        padding: 10px 12px;
+        font-size: 16px;
+    } 
+
+}
+
+@media(max-width:400px){
+    .lista{
+        margin-top: 30px;
+        gap: 16px;}
+    .lista a{
+        padding: 8px 10px;
+        font-size: 16px;
+    } 
+}

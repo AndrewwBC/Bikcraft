@@ -1,0 +1,13 @@
+footer{
+    margin: 0;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 42px 12px ;
+}
+
+/*RESPONSIVIDADE*/
+@media(max-width:500px){
+    footer{
+        font-size: 16px;
+         }
+}
