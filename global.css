@@ -8,10 +8,12 @@ body, p, h1, h2, ul, li, a, h3{
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #e7e7e7;
+    width: 100%;
 }
 
 body p{
