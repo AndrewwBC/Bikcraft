@@ -122,16 +122,13 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 24px;
-    padding: 12px;
-    /* Anula o movimento da div
-    border-left: 5px solid #00000000; */
-    
-    
+    padding: 12px;   
 }
 
 .grid-icones:hover{
     border-left: 6px solid red;
-    transition: 0.15s;
+    border-radius: 4px;
+    transition: 0.5s;    
 }
 
 
@@ -145,6 +142,10 @@
     .main-grid{
         width: 100vw;
         padding-top: 32px;
+    }
+
+    .handmade::after{
+        display: none;
     }
 
     .handmade h1{
